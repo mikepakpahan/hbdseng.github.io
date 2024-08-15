@@ -187,7 +187,7 @@ body {
   
   .cake {
     position: absolute;
-    background-color: #ddb892;
+    background-color: #ffc3ce;
     width: 350px;
     height:130px;
     transform: translate(-50%,-60%);
@@ -205,12 +205,12 @@ body {
   }
   
   .cake:before {
-    background-color: #ddb892;
+    background-color: #ffc3ce;
     top:130px;
   }
   
   .cake:after {
-    background-color: #b08968;
+    background-color: #ff82a1;
     width:350px;
     height:30px;
     top:50px;
@@ -218,7 +218,7 @@ body {
   
   .middle {
     position: absolute;
-    background-color: #b08968;
+    background-color: #ff82a1;
     top:80px;
     z-index:1;
   }
@@ -226,13 +226,13 @@ body {
   .middle:before {
     content:"";
     position: absolute;
-    background-color: #ddb892;
+    background-color: #ffc3ce;
     top:-35px;
   }
   
   .top {
     position: absolute;
-    background-color: #7f5539;
+    background-color: #ff0090;
     width:350px;
     height: 90px;
     border-radius:50%;
@@ -245,11 +245,11 @@ body {
     position: absolute;
     width: 55px;
     height:50px;
-    background-color: #7f5539;
+    background-color: #ff0090;
     top:0;
     z-index:1;
     border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
-    box-shadow: 49px 20px #7f5539, 98px 25px #7f5539, 147px 30px #7f5539, 196px 25px #7f5539, 245px 20px #7f5539, 295px 0 #7f5539, 0px 4px #fff, 49px 24px #fff, 98px 29px #fff, 147px 34px #fff, 196px 29px #fff, 245px 24px #fff, 295px 4px #fff;
+    box-shadow: 49px 20px #ff0090, 98px 25px #ff0090, 147px 30px #ff0090, 196px 25px #ff0090, 245px 20px #ff0090, 295px 0 #ff0090, 0px 4px #fff, 49px 24px #fff, 98px 29px #fff, 147px 34px #fff, 196px 29px #fff, 245px 24px #fff, 295px 4px #fff;
   }
   
   .chocs:before {
