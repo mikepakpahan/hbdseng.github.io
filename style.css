@@ -6,6 +6,8 @@ body {
     min-height: 100vh;
     font-family: 'Arial', sans-serif;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .card {
@@ -79,6 +81,14 @@ body {
     height: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-placeholder i {
+    color: #333;
+    font-size: 20px;
 }
 
 .card-right {
@@ -93,22 +103,61 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Memposisikan gambar tepat di tengah */
-    width: 300px; /* Ukuran gambar */
+    transform: translate(-50%, -50%);
+    width: 300px;
     height: 300px;
-    border-radius: 10px; /* Agar sudut gambar agak membulat */
-    border: 2px solid #fff; /* Border tipis */
-    object-fit: cover; /* Memastikan gambar terisi penuh tanpa merusak aspek rasio */
+    border-radius: 10px;
+    border: 2px solid #fff;
+    object-fit: cover;
 }
 
-.icon-placeholder {
-    font-size: 24px; /* Ukuran ikon */
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-    color: #333; /* Warna ikon */
-}
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
 
-.icon-placeholder i {
-    display: block;
+    .card-left, .card-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-left {
+        align-items: center;
+    }
+
+    .card-img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-info h2 {
+        font-size: 2rem;
+    }
+
+    .card-info p {
+        font-size: 1rem;
+    }
+
+    .card-info button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .icons {
+        gap: 10px;
+    }
+
+    .icon-placeholder {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .card-right .center-img {
+        width: 250px;
+        height: 250px;
+    }
 }
