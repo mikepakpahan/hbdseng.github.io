@@ -22,8 +22,9 @@ function openBook() {
     nextBtn.style.transform = "translateX(180px)";
 
     if (window.matchMedia("(max-width: 480px)").matches) {
-        prevBtn.style.transform = "translateX(-120px)";
-        nextBtn.style.transform = "translateX(120px)";
+        book.style.transform = "rotate(90deg) translateX(120px)";
+        prevBtn.style.transform = "rotate(90deg) translateX(-290px) translateY(-150px)";
+        nextBtn.style.transform = "rotate(90deg) translateX(290px) translateY(150px)";
     }
 }
 
