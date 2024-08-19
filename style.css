@@ -447,8 +447,9 @@ body {
       width: 250px;
       height: 250px;
   }
-}
+
   .text{
-    transform: translate(0, 50px);
+    transform: translate(0, -500px);
     z-index: 1;
   }
+}
