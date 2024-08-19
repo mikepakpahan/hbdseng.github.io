@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".candles").click(function() {
+  $(".candles").one("click", function() {
       // Memutar audio
       var audio = document.getElementById("blow-sound");
       audio.play();
