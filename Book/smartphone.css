@@ -53,8 +53,10 @@
     }
 
     #f1 h3 {
+        position: absolute;
+        bottom: 20px;
+        left: 73px;
         font-size: 1.5rem;
-        margin-top: 150px;
     }
 
     .gambarB1{
