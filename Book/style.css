@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
+    background: linear-gradient(45deg, #fbc2eb, #d198ff, rgb(72, 139, 255));
 }
 
 .home-button {
@@ -121,7 +121,7 @@ i {
 }
 
 #f1 {
-    background-color: #ff8fe1;
+    background-color: #c6c7ff;
     border-radius: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
@@ -136,7 +136,7 @@ i {
 }
 
 #f3 {
-    background-color: #ff8fe1;
+    background-color: rgb(255, 165, 231);
     border-radius: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@ i {
 }
 
 #b1{
-    background-color: #ff8fe1;
+    background-color: rgb(255, 165, 231);
     border-radius: 15px 0 0 15px;
     justify-content: center;
     align-items: center;
@@ -263,7 +263,7 @@ i {
 }
 
 #b3 {
-    background-color: #ff8fe1;
+    background-color: #c6c7ff;
     border-radius: 15px 0 0 15px;
 }
 
