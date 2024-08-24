@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Brittany';
+    src: url('../Font/BrittanySignature.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Moontime';
+    src: url('../Font/Moontime.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'DailyLife';
+    src: url('../Font/Daily\ Life.ttf') format('truetype');
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: linear-gradient(45deg, #fbc2eb, #d198ff, rgb(72, 139, 255));
+}
+
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #f09386;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
+}
+
+/* Book */
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+    display: flex; /* Tambahkan ini untuk Flexbox */
+    /* justify-content: center; */
+    align-items: center; /* Pusatkan konten vertikal */
+}
+
+.front, .back {
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid rgb(48, 124, 255);
+    /* padding-left: 40px; */
+    display: flex;
+}
+
+.back {
+    z-index: 0;
+    border-left: 3px solid powderblue;
+}
+
+.front-content, .back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front, .flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #636363;
+}
+
+i {
+    font-size: 50px;
+    color: gray;
+}
+
+#f1 {
+    background-color: #c6c7ff;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#f2 {
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#f3 {
+    background-color: rgb(255, 165, 231);
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#happy{
+    font-family: brittany;
+    font-size: 48px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+#birthday{
+    font-family: brittany;
+    font-size: 48px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 75px;
+}
+
+#f1 img {
+    border-radius: 20px;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+#f1 .img-container {
+    display: flex;
+    justify-content: center; /* Pusatkan gambar secara horizontal */
+    align-items: center; /* Pusatkan gambar secara vertikal */
+    width: 100%;
+    height: 105%;
+    position: absolute; /* Posisikan pembungkus di atas konten lain */
+    top: 20px;
+    left: 0;
+}
+
+#f1 .bingkaiBawah{
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    width: 103%;
+    margin-top: 390px;
+}
+#f1 .bingkaiAtas{
+    position: absolute;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170%;
+    height: 20%;
+}
+
+#f1 .bingkaiAtas img,
+#f1 .bingkaiBawah img {
+    width: 120px; /* Atur ukuran sesuai kebutuhan */
+    height: 120px;
+    object-fit: cover;
+}
+
+#f1 h3 {
+    font-size: 2.5rem;
+    font-family: Moontime;
+    color: black;
+    align-items: bottom;
+    text-align: center;
+    margin-top: 230px;
+}
+
+#b1{
+    background-color: rgb(255, 165, 231);
+    border-radius: 15px 0 0 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#b1 .gambarB1, .gambarB2, .gambarB3, .hiasanBunga, .hiasanBunga2{
+    object-fit: cover;
+    position: absolute;
+    width: 170px;
+    height: 170px;
+}
+
+.gambarB1{
+    top: 20px;
+    left: 20px;
+    transform: rotate(-20deg);
+}
+
+.gambarB2{
+    right: 20px;
+    transform: rotate(20deg);
+}
+
+.gambarB3{
+    bottom: 20px;
+    left: 20px;
+    transform: rotate(-20deg);
+}
+
+.hiasanBunga{
+    bottom: 0;
+    right: 0;
+}
+
+.hiasanBunga2{
+    top: 0;
+    right: 0;
+}
+
+.hiasanBunga3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+}
+
+#b2{
+    background-color: white;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#b3 {
+    background-color: #c6c7ff;
+    border-radius: 15px 0 0 15px;
+}
+
+#f2 p{
+    font-family: DailyLife;
+    font-size: 2.13rem;
+    line-height: 0.8;
+    color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#f2 h3{
+    font-family: DailyLife;
+    font-size: 3rem;
+    margin-left: 70px;
+}
+
+#b2 h3{
+    font-family: DailyLife;
+    font-size: 3rem;
+    margin-left: 110px;
+}
+
+#b2 p{
+    font-family: DailyLife;
+    font-size: 2.05rem;
+    line-height: 0.8;
+    color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 3;
+}
+
+#p2 {
+    z-index: 2;
+}
+
+#p3 {
+    z-index: 1;
+}
