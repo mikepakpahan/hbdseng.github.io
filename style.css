@@ -1,11 +1,11 @@
 @font-face{
   font-family: 'Moontime';
-  src: url('../Font/Moontime.ttf') format('truetype');
+  src: url('./Font/Moontime.ttf') format('truetype');
 }
 
 @font-face{
   font-family: 'Brittany';
-  src: url('../Font/BrittanySignature.ttf') format('truetype');
+  src: url('./Font/BrittanySignature.ttf') format('truetype');
 }
 
 body {
